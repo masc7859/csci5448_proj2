@@ -1,9 +1,18 @@
 from animal_classes.pachyderm import Pachyderm
+import random
 
 class Hippo(Pachyderm):
 
     def makeNoise(self):
-        print(self.name + " the " + self.getAnimalType() + " makes noise.")
+        randAction = random.randint(0,100)
+        if(randAction < 25):
+            print(self.name + " the " + self.getAnimalType() + " makes noise.")
+        elif(randAction < 50):
+            self.eat()
+        elif(randAction < 75):
+            self.roam()
+        else:
+            self.sleep()
 
     def getAnimalType(self):
         return self.__class__.__name__
