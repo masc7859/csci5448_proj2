@@ -1,7 +1,7 @@
 # OOAD Homework/Project 2 : Zoo With Strategy and Observer
 ## Team: 
-Max Schwarz
-Will Culkin
+Max Schwarz<br/>
+Will Culkin<br/>
 Dmitri Tarasov
 
 ## Comments
