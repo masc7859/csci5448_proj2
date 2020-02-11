@@ -1,1 +1,1 @@
-import cat, dog, elephant, hippo, lion, rhino, tiger, wolf
+import animals.cat, animals.dog, animals.elephant, animals.hippo, animals.lion, animals.rhino, animals.tiger, animals.wolf

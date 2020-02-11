@@ -1,1 +1,1 @@
-import canine, feline, pachyderm
+import animal_classes.canine, animal_classes.feline, animal_classes.pachyderm

@@ -1,21 +1,22 @@
-
-class Zookeeper:
+from Subject import Subject
+class Zookeeper(Subject):
+    state = ""
 
     def doDuties(self, zooPopulation):
         for animal in zooPopulation:
-            self.wakeupAnimal(animal);
+            self.wakeupAnimal(animal)
 
         for animal in zooPopulation:
-            self.callAnimal(animal);
+            self.callAnimal(animal)
 
         for animal in zooPopulation:
-            self.feedAnimal(animal);
+            self.feedAnimal(animal)
 
         for animal in zooPopulation:
-            self.exerciseAnimal(animal);
+            self.exerciseAnimal(animal)
 
         for animal in zooPopulation:
-            self.sleepAnimal(animal);
+            self.sleepAnimal(animal)
 
     def shutdownZoo(self):
         print("Shutting Down Zoo")
@@ -39,3 +40,6 @@ class Zookeeper:
     def sleepAnimal(self, animal):
         print("Putting to Sleep Animal: ")
         animal.sleep()
+    
+    def update(self):
+        pass

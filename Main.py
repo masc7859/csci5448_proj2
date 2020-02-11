@@ -1,5 +1,6 @@
 from animal import Animal
 from zookeeper import Zookeeper
+from zooAnnouncer import ZooAnnouncer
 import animal_classes
 import animals
 
@@ -21,6 +22,7 @@ if __name__ == "__main__":
     print("Animals in zoo:")
     for animal in zooPopulation:
         print(animal.getName() + " the " + animal.getAnimalType())
+    #alex = ZooAnnouncer()
     zeus = Zookeeper()
     zeus.doDuties(zooPopulation)
     zeus.shutdownZoo()
