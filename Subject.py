@@ -1,5 +1,4 @@
-from abc import ABC, abstractmethod 
-class Subject(ABC):
+class Subject():
     def registerobserver(self):
         pass
     

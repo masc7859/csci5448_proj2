@@ -1,5 +1,4 @@
-from abc import ABC, abstractmethod 
-class Observer(ABC):
+class Observer():
     def update(self,state):
         pass
     
