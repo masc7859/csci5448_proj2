@@ -3,17 +3,25 @@ from zookeeper import Zookeeper
 from zooAnnouncer import ZooAnnouncer
 import animal_classes
 import animals
+from wakeup_strategy import WakeUpAngryStrategy
+from wakeup_strategy import WakeUpNiceStrategy
+from wakeup_strategy import WakeUpReluctantlyStrategy
 
 def populateZoo():
     animalsInZoo = []
-    animalsInZoo.append(animals.cat.Cat("Carl"))
-    animalsInZoo.append(animals.dog.Dog("Dan"))
-    animalsInZoo.append(animals.elephant.Elephant("Earl"))
-    animalsInZoo.append(animals.hippo.Hippo("Henry"))
-    animalsInZoo.append(animals.lion.Lion("Loid"))
-    animalsInZoo.append(animals.rhino.Rhino("Rick"))
-    animalsInZoo.append(animals.tiger.Tiger("Timmy"))
-    animalsInZoo.append(animals.wolf.Wolf("Walt"))
+
+    angryWakeup = WakeUpAngryStrategy()
+    niceWakeup = WakeUpNiceStrategy()
+    reluctantWakeup = WakeUpReluctantlyStrategy()
+
+    animalsInZoo.append(animals.cat.Cat("Carl", angryWakeup))
+    animalsInZoo.append(animals.dog.Dog("Dan", niceWakeup))
+    animalsInZoo.append(animals.elephant.Elephant("Earl", reluctantWakeup))
+    animalsInZoo.append(animals.hippo.Hippo("Henry", reluctantWakeup))
+    animalsInZoo.append(animals.lion.Lion("Loid", angryWakeup))
+    animalsInZoo.append(animals.rhino.Rhino("Rick", niceWakeup))
+    animalsInZoo.append(animals.tiger.Tiger("Timmy", reluctantWakeup))
+    animalsInZoo.append(animals.wolf.Wolf("Walt", niceWakeup))
 
     return animalsInZoo
 
