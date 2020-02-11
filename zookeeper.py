@@ -64,6 +64,3 @@ class Zookeeper(Subject):
         self.notifyobservers()
         print("Putting to Sleep Animal: ")
         animal.sleep()
-    
-    def update(self):
-        pass

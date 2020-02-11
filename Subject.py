@@ -1,4 +1,7 @@
-class Subject():
+import abc
+
+class Subject:
+    __metaclass__ = abc.ABCMeta
     def registerobserver(self):
         pass
     

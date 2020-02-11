@@ -1,6 +1,6 @@
 from Observer import Observer
 class ZooAnnouncer(Observer):
-
+    name = ""
     def __init__(self,name):
         self.name = name
     def update(self,state):
