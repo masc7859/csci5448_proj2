@@ -22,7 +22,9 @@ if __name__ == "__main__":
     print("Animals in zoo:")
     for animal in zooPopulation:
         print(animal.getName() + " the " + animal.getAnimalType())
-    #alex = ZooAnnouncer()
+    alex = ZooAnnouncer('Alex')
     zeus = Zookeeper()
+
+    zeus.registerobserver(alex)
     zeus.doDuties(zooPopulation)
     zeus.shutdownZoo()
