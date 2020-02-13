@@ -16,18 +16,23 @@ class Zookeeper(Subject):
             observer.update(self.state)
 
     def doDuties(self, zooPopulation):
+        self.setstate('waking')
         for animal in zooPopulation:
             self.wakeupAnimal(animal)
 
+        self.setstate('calling')    
         for animal in zooPopulation:
             self.callAnimal(animal)
 
+        self.setstate('feeding')
         for animal in zooPopulation:
             self.feedAnimal(animal)
 
+        self.setstate('exercing')
         for animal in zooPopulation:
             self.exerciseAnimal(animal)
 
+        self.setstate('corraling')
         for animal in zooPopulation:
             self.sleepAnimal(animal)
 
@@ -36,31 +41,28 @@ class Zookeeper(Subject):
         print("Shutting Down Zoo")
 
     def wakeupAnimal(self, animal):
-        self.state = "waking"
-        self.notifyobservers()
-        print("Waking Up Animal: ")
+        #print("Waking Up Animal: ")
         animal.wakeup()
 
     def callAnimal(self, animal):
-        self.state = "calling"
-        self.notifyobservers()
-        print("Calling Animal: ")
+        #print("Calling Animal: ")
         animal.makeNoise()
 
     def feedAnimal(self, animal):
-        self.state = "feeding"
-        self.notifyobservers()
-        print("Feeding Animal: ")
+        #print("Feeding Animal: ")
         animal.eat()
 
     def exerciseAnimal(self, animal):
-        self.state = "exercising"
-        self.notifyobservers()
-        print("Exercising Animal: ")
+        #print("Exercising Animal: ")
         animal.roam()
 
     def sleepAnimal(self, animal):
-        self.state = "corraling"
-        self.notifyobservers()
-        print("Putting to Sleep Animal: ")
+        #print("Putting to Sleep Animal: ")
         animal.sleep()
+    
+    def setstate(self,state):
+        self.state = state
+        self.notifyobservers()
+
+    def getstate(self):
+        return self.state
