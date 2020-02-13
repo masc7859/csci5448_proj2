@@ -1,3 +1,4 @@
+import sys
 
 class Animal:
 
@@ -9,7 +10,7 @@ class Animal:
         return self.name
 
     def wakeup(self):
-        print(self.name + " the " + self.getAnimalType()),
+        print(self.name + " the " + self.getAnimalType(), end = ' ')
         self._wakeupStrategy.wakeup()
 
     def sleep(self):
