@@ -1,0 +1,56 @@
+(base) dima@dima-Inspiron-7786:~/Desktop/ood/projects/csci5448_proj2$ python Main.py
+Animals in zoo:
+Carl the Cat
+Dan the Dog
+Earl the Elephant
+Henry the Hippo
+Loid the Lion
+Rick the Rhino
+Timmy the Tiger
+Walt the Wolf
+Alex reporting, the zookeeper is waking the animals
+Carl the Cat wakes up VERY ANGRY.
+Dan the Dog wakes up really nice.
+Earl the Elephant doesn't really want to wake up...but does anyways.
+Henry the Hippo doesn't really want to wake up...but does anyways.
+Loid the Lion wakes up VERY ANGRY.
+Rick the Rhino wakes up really nice.
+Timmy the Tiger doesn't really want to wake up...but does anyways.
+Walt the Wolf wakes up really nice.
+Alex reporting, the zookeeper is calling the animals
+Carl the Cat makes noise.
+Dan the Dog makes noise.
+Earl the Elephant makes noise.
+Henry the Hippo goes to sleep.
+Loid the Lion makes noise.
+Rick the Rhino makes noise.
+Timmy the Tiger makes noise.
+Walt the Wolf makes noise.
+Alex reporting, the zookeeper is feeding the animals
+Carl the Cat eats.
+Dan the Dog eats.
+Earl the Elephant eats.
+Henry the Hippo eats.
+Loid the Lion eats.
+Rick the Rhino eats.
+Timmy the Tiger eats.
+Walt the Wolf eats.
+Alex reporting, the zookeeper is exercing the animals
+Carl the Cat roams around.
+Dan the Dog roams around.
+Earl the Elephant roams around.
+Henry the Hippo roams around.
+Loid the Lion roams around.
+Rick the Rhino roams around.
+Timmy the Tiger roams around.
+Walt the Wolf roams around.
+Alex reporting, the zookeeper is corraling the animals
+Carl the Cat goes to sleep.
+Dan the Dog goes to sleep.
+Earl the Elephant goes to sleep.
+Henry the Hippo goes to sleep.
+Loid the Lion goes to sleep.
+Rick the Rhino goes to sleep.
+Timmy the Tiger goes to sleep.
+Walt the Wolf goes to sleep.
+Shutting Down Zoo
