@@ -1,4 +1,6 @@
 from Observer import Observer
+
+#This class is our observer for observing the zookeeper
 class ZooAnnouncer(Observer):
     name = ""
     def __init__(self,name):

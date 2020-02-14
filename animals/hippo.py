@@ -3,6 +3,7 @@ import random
 
 class Hippo(Pachyderm):
 
+    #This is our random action implementation. Instead of making noise the animal may do something else
     def makeNoise(self):
         randAction = random.randint(0,100)
         if(randAction < 25):
